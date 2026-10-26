@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tridy-worm-croncheck"
+version = "0.1.0"
+description = "只读检查定时任务，分开「没跑」与「跑了但失败」"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "tridy-worm" }]
+keywords = ["cron", "scheduling", "audit", "operations"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/tridy-worm/croncheck"
+Repository = "https://github.com/tridy-worm/croncheck"
+Issues = "https://github.com/tridy-worm/croncheck/issues"
+
+[project.scripts]
+croncheck = "croncheck:main"
+
+[tool.setuptools]
+py-modules = ["croncheck"]
