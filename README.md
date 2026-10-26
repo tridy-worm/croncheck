@@ -9,6 +9,23 @@
 - 单文件，`croncheck.py` 拷走就能用
 - **只读不触发**：从不执行任务，也不与 cron 服务交互
 
+<!-- ipos:install -->
+## 安装
+
+零依赖，Python 3.10+ 即可：
+
+```bash
+pip install tridy-worm-croncheck
+```
+
+装完直接用命令名调用：
+
+```bash
+croncheck --help
+```
+
+也可以不用安装，直接把 `croncheck.py` 拷走用——它只依赖标准库。
+
 ## 为什么需要它
 
 踩过「定时任务突然不跑了」的坑：查下来是时区。
